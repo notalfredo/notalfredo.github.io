@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Work Portfolio — Alfredo Gutierrez</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div class="all">
+
+    <!-- Header band -->
+    <header class="site-header">
+        <div class="site-title"><span class="name">Alfredo Gutierrez</span> // Software Engineer</div>
+    </header>
+
+    <!-- Nav bar -->
+    <nav class="site-nav">
+        <div class="wrap">
+            <a href="index.html">Main</a>
+            <a href="portfolio.html" class="active">Work Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main class="wrap">
+
+        <h1>Work Portfolio</h1>
+
+        <h2><a href="https://www.rmfg.com/">RMFG</a></h2>
+        <div class="comment">// Work primarily done in C++ and Rust. CAD analysis was mainly done with OpenCASCADE (OCCT).</div>
+
+        <h3>Auto nesting</h3>
+        <div class="media-row">
+            <figure style="flex: 0.524;">
+                <img src="media/auto-nest.png" alt="Sheet layout produced by the auto nester">
+                <figcaption>// Auto nester output: parts packed onto a sheet</figcaption>
+            </figure>
+            <figure style="flex: 1.302;">
+                <img src="media/camera-nest.jpeg" alt="Camera nest: parts and G code toolpath overlaid on a photo of a remnant sheet on the cutting bed">
+                <figcaption>// Camera nest: parts nested onto a photographed remnant sheet, with the generated G code toolpath overlaid. <a href="https://x.com/KennethCassel/status/1958990026249052298">(Original post on X)</a></figcaption>
+            </figure>
+            <figure style="flex: 1.313;">
+                <img src="media/camera-nest-2.png" alt="Camera nest: detected sheet boundary with parts nested inside it on the cutting bed">
+                <figcaption>// Camera nest: detected sheet boundary (blue) with parts and toolpaths nested inside it. <a href="https://x.com/KennethCassel/status/1950669098137862378">(Original post on X)</a></figcaption>
+            </figure>
+        </div>
+        <div class="media-row">
+            <figure style="flex: 0.75;">
+                <img src="media/camera-rig.png" alt="Camera mounted on the ceiling above the cutting bed">
+                <figcaption>// The ceiling mounted camera that photographs the cutting bed for the camera nester. <a href="https://x.com/KennethCassel/status/1948235206621605933">(Original post on X)</a></figcaption>
+            </figure>
+            <figure style="flex: 0.75;">
+                <img src="media/charuco-calibration.png" alt="ChArUco calibration board laid on the cutting bed">
+                <figcaption>// ChArUco board laid on the cutting bed to calibrate the camera's lens distortion. <a href="https://x.com/KennethCassel/status/1948235206621605933">(Original post on X)</a></figcaption>
+            </figure>
+            <figure style="flex: 2.667;">
+                <img src="media/undistorted-bed.png" alt="Raw camera image next to the lens distortion corrected image of the cutting bed">
+                <figcaption>// Raw camera image (left) vs the undistorted image of the bed after calibration (right). <a href="https://x.com/KennethCassel/status/1948240289358807534">(Original post on X)</a></figcaption>
+            </figure>
+        </div>
+        <div class="media-row">
+            <figure style="flex: 2.287;">
+                <img src="media/remnant-detection.png" alt="Labeled training data: cutting bed photos with remnant sheets and cut areas outlined">
+                <figcaption>// Training an ML model to detect remnant sheets on the cutting bed, labeled dataset used by the camera nester. <a href="https://x.com/KennethCassel/status/1959087136671486326">(Original post on X)</a></figcaption>
+            </figure>
+            <figure style="flex: 1.778;">
+                <a href="https://www.youtube.com/watch?v=W00HFV6bRKA&amp;t=2648s">
+                    <img src="media/factory-tour-thumb.jpg" alt="RMFG Factory Tour: Automating Sheet Metal Operations with Vision AI — watch on YouTube">
+                </a>
+                <figcaption>// RMFG factory tour: the founder on sheet metal remnants and the camera nester (starts at the relevant timestamp). <a href="https://www.youtube.com/watch?v=W00HFV6bRKA&amp;t=2648s">(Watch on YouTube)</a></figcaption>
+            </figure>
+        </div>
+
+        <h3>Unfolding algorithm</h3>
+        <div class="media-row narrow">
+            <figure style="flex: 1.577;">
+                <img src="media/unfold-bent.png" alt="Bent sheet metal part with multiple flanges">
+                <figcaption>// A bent sheet metal part with multiple flanges, imported from a STEP file</figcaption>
+            </figure>
+            <figure style="flex: 0.950;">
+                <img src="media/unfold-flat.png" alt="The same part unfolded into a flat pattern">
+                <figcaption>// The same part auto unfolded into a flat pattern, ready for DXF export</figcaption>
+            </figure>
+        </div>
+
+        <h3>Weld path detection</h3>
+        <div class="media-row narrow">
+            <figure style="flex: 1.367; max-width: 700px;">
+                <img src="media/weld-paths.png" alt="STEP assembly with auto detected weld paths highlighted where the parts meet">
+                <figcaption>// Auto detected weld paths on a STEP assembly, the contact paths between parts are highlighted</figcaption>
+            </figure>
+        </div>
+
+        <h3>Bend and corner reliefs</h3>
+        <div class="media-row">
+            <figure style="flex: 2.217; max-width: 900px;">
+                <img src="media/bend-reliefs.png" alt="Sheet metal part before and after bend reliefs are applied">
+                <figcaption>// The same part before (left) and after (right) bend reliefs are applied</figcaption>
+            </figure>
+        </div>
+        <div class="media-row">
+            <figure style="flex: 2.220;">
+                <img src="media/corner-relief.png" alt="Sheet metal part before and after a circular corner relief is applied">
+                <figcaption>// Before (left) and after (right) a circular corner relief is applied</figcaption>
+            </figure>
+            <figure style="flex: 2.115;">
+                <img src="media/corner-relief-squared.png" alt="Sheet metal part before and after a squared corner relief is applied">
+                <figcaption>// Before (left) and after (right) a squared corner relief is applied</figcaption>
+            </figure>
+        </div>
+
+        <h3>STEP thickness editing</h3>
+        <div class="media-row narrow">
+            <figure style="flex: 1.004;">
+                <img src="media/thickness-edit-1.png" alt="Bent bracket at original sheet thickness">
+                <figcaption>// A bent STEP part at its original sheet thickness</figcaption>
+            </figure>
+            <figure style="flex: 1.182;">
+                <img src="media/thickness-edit-2.png" alt="The same bracket regenerated at a different thickness">
+                <figcaption>// The same part regenerated at a different thickness and bend radius by the editing algorithm</figcaption>
+            </figure>
+        </div>
+
+        <!--
+        Media how-to: drop files into media/ and copy a figure block above. Videos: use mp4
+        (H.264); <video src="..." autoplay muted loop playsinline></video> behaves like a
+        silent looping GIF, or use "controls" for a play bar.
+        -->
+
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            Alfredo Gutierrez — icealfredo123[at]gmail[dot]com —
+            <a href="https://github.com/notalfredo">GitHub</a> /
+            <a href="https://www.linkedin.com/in/alfredo-gutierrez-2a77181bb">LinkedIn</a>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

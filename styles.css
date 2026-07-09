@@ -1,0 +1,240 @@
+/* Theme matched to quaoar.su/blog (Manifold Geometry, MaxSite CMS default template) */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+    color: #444;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.55;
+}
+
+/* ===== Title band ===== */
+.site-header {
+    background-color: rgb(46, 73, 75);
+}
+
+.site-title {
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 26pt;
+    font-weight: bold;
+    line-height: 2em;
+    color: rgb(147, 197, 202);
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.site-title .name {
+    color: rgb(250, 250, 250);
+}
+
+/* ===== Nav bar ===== */
+.site-nav {
+    background-color: #395766;
+}
+
+.site-nav .wrap {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0;
+}
+
+.site-nav a {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    margin-right: 1px;
+    color: #D7E3E9;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.3s ease-out;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+    background-color: rgba(10, 10, 10, 0.2);
+    color: #fff;
+}
+
+/* ===== Layout ===== */
+.all {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.wrap {
+    padding: 0 30px;
+}
+
+main.wrap {
+    padding-top: 24px;
+    padding-bottom: 48px;
+}
+
+/* ===== Notice box ===== */
+.notice {
+    background-color: #F2F2F2;
+    padding: 14px 20px;
+    margin-bottom: 30px;
+}
+
+/* ===== Code-comment blocks ===== */
+.comment-intro,
+.comment {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: #333;
+    white-space: pre-wrap;
+    margin: 12px 0 24px;
+}
+
+.comment-intro {
+    margin: 30px 0;
+}
+
+/* ===== Headings ===== */
+h1 {
+    color: #447790;
+    font-size: 32px;
+    font-weight: normal;
+    margin: 20px 0 16px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #444;
+    margin: 36px 0 12px;
+    padding-bottom: 8px;
+    border-bottom: #8D9AA0 1px dotted;
+}
+
+h3 {
+    font-size: 19px;
+    margin: 22px 0 6px;
+}
+
+h3 .meta,
+h4 .meta {
+    margin-left: 10px;
+    font-weight: normal;
+    color: #6A7C85;
+}
+
+/* ===== Links ===== */
+a {
+    color: #447790;
+}
+
+a:hover {
+    color: #345a6d;
+}
+
+/* ===== Profile section ===== */
+.profile {
+    display: flex;
+    align-items: flex-start;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.profile img.portrait {
+    width: 220px;
+    display: block;
+}
+
+.profile .who {
+    flex: 1;
+    min-width: 240px;
+}
+
+.profile .who p {
+    margin: 4px 0;
+}
+
+/* ===== Lists & content ===== */
+ul {
+    margin: 8px 0 18px;
+}
+
+li {
+    margin: 4px 0;
+}
+
+.edu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.edu img {
+    width: 90px;
+}
+
+.edu h3 {
+    margin: 0;
+}
+
+/* ===== Portfolio media =====
+   Justified rows: figures in a .media-row get flex values equal to their
+   image aspect ratio (w/h), so every image in a row renders equal-height. */
+.media-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 16px 0 28px;
+}
+
+.media-row.narrow {
+    max-width: 1100px;
+}
+
+.media-row figure {
+    margin: 0;
+    min-width: 0;
+}
+
+.media-row img,
+.media-row video {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+.media-row figcaption {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+    color: #555;
+    margin-top: 6px;
+}
+
+@media (max-width: 767px) {
+    .media-row {
+        flex-direction: column;
+    }
+}
+
+/* ===== Footer ===== */
+.site-footer {
+    background-color: rgb(46, 73, 75);
+    color: rgb(147, 197, 202);
+    padding: 18px 0;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+.site-footer a {
+    color: rgb(147, 197, 202);
+}
