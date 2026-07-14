@@ -86,17 +86,25 @@
             <span class="meta">Jun 2023 – Dec 2023</span>
         </h3>
         <div class="comment">/*
- *  Helped build an API driven metal fabrication shop. Work written
+ *  Helped build an API driven sheet metal fabrication startup. Work written
  *  primarily in C++ and Rust. <a href="portfolio.html">(Link to portfolio)</a>
  *
- *  - Built a sheet metal unfolding engine (C++, OpenCASCADE) that auto detects flat and bent
- *    parts, unfolds them, and generates DXF flat patterns.
- *  - Built an auto nester and a camera driven nester (Rust): the cutting bed is photographed,
- *    remnant sheets are detected with a trained ML model, and parts are nested around the
- *    material already on the sheet.
- *  - Generated cutting machine G code with kerf compensation, lead ins, and micro joints.
- *  - Auto detected part features such as holes, countersinks, and weld paths on assemblies.
- *  - Supported editing part thickness and bend radius to match manufacturing needs.
+ *  - Replaced a manual quoting team by building the C++/OpenCASCADE engine behind an online
+ *    quoter: it unfolds STEP sheet metal parts and detects features (holes, countersinks,
+ *    weld seams) to price a part instantly, taking quotes from hours to seconds at hundreds
+ *    a day.
+ *  - Eliminated the need for a dedicated CAD team by automating STEP part prep (C++,
+ *    OpenCASCADE): weld seam detection, bend and corner reliefs, hole correction, shape
+ *    repair, and thickness / bend radius regeneration.
+ *  - Built a No-Fit-Polygon nesting engine (Rust) that maximizes sheet utilization and emits
+ *    CNC G code (kerf compensation, lead ins, micro joints), saving thousands per week by
+ *    reusing remnant material.
+ *  - Built the camera nester's computer vision pipeline (Python, OpenCV): a ceiling camera
+ *    photographs the cutting bed and a trained Roboflow model detects leftover metal, so
+ *    parts nest onto real scrap instead of new sheets.
+ *  - Built shop floor tools (Next.js / TypeScript) that turn specialist CAD/CAM work into
+ *    simple, guided steps, lowering the barrier to entry so technicians could run operations
+ *    and earn higher pay.
  */</div>
 
         <h3>UTA Undergraduate Theoretical CS Teaching Assistant
