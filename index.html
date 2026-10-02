@@ -27,7 +27,7 @@
     <main class="wrap" id="main">
 
         <div class="notice">
-            I am currently open to full time, contract, and consulting opportunities — reach out via the <a href="contact.html">contact page</a>.
+            I am currently open to full time, contract, and consulting opportunities. See my <a href="portfolio.html">work portfolio</a> or reach out via the <a href="contact.html">contact page</a>.
         </div>
 
         <!-- Profile -->
@@ -43,6 +43,7 @@
                 <br>
                 <p>Personal Email: alfredo.gutierrez.dev[at]gmail[dot]com</p>
                 <p>
+                    <a href="portfolio.html">Portfolio</a> /
                     <a href="https://github.com/notalfredo">GitHub</a> /
                     <a href="https://www.linkedin.com/in/alfredo-gutierrez-2a77181bb">LinkedIn</a>
                 </p>
@@ -82,27 +83,24 @@
 
         <h3><a href="https://www.rmfg.com/">RMFG</a> — Software Engineer
             <span class="meta">Jun 2023 – Jul 2026</span>
+            <span class="meta"><a href="portfolio.html">See the portfolio →</a></span>
         </h3>
         <div class="comment">/*
- *  Helped build an API driven sheet metal fabrication startup. Work written
- *  primarily in C++ and Rust. <a href="portfolio.html">(Link to portfolio)</a>
+ *  I owned the C++ geometry engine and Rust nesting engine end to end, contributed heavily
+ *  across the Python/FastAPI backend and Next.js shop floor UI, and built a computer vision
+ *  pipeline along the way: a C++/OpenCASCADE engine that replaced an entire manual quoting
+ *  team, automated DFM and geometry repair that eliminated the need for a dedicated CAD team, a
+ *  Rust nesting engine that saves thousands a week in material, and a vision system that
+ *  detects scrap metal so we stop wasting new sheets.
  *
- *  - Replaced a manual quoting team by building the C++/OpenCASCADE engine behind an online
- *    quoter: it unfolds STEP sheet metal parts and detects features (holes, countersinks,
- *    weld seams) to price a part instantly, taking quotes from hours to seconds at hundreds
- *    a day.
- *  - Eliminated the need for a dedicated CAD team by automating STEP part prep (C++,
- *    OpenCASCADE): weld seam detection, bend and corner reliefs, hole correction, shape
- *    repair, and thickness / bend radius regeneration.
- *  - Built a No-Fit-Polygon nesting engine (Rust) that maximizes sheet utilization and emits
- *    CNC G code (kerf compensation, lead ins, micro joints), saving thousands per week by
- *    reusing remnant material.
- *  - Built the camera nester's computer vision pipeline (Python, OpenCV): a ceiling camera
- *    photographs the cutting bed and a trained Roboflow model detects leftover metal, so
- *    parts nest onto real scrap instead of new sheets.
- *  - Built shop floor tools (Next.js / TypeScript) that turn specialist CAD/CAM work into
- *    simple, guided steps, lowering the barrier to entry so technicians could run operations
- *    and earn higher pay.
+ *  I also built and maintained REST endpoints across a Python/FastAPI backend spanning quoting,
+ *  checkout, materials, designs, etc... with Pydantic models and a service layer over Postgres
+ *  (Supabase), writing SQL queries and schema migrations, and shipping it all with Docker and
+ *  GitHub Actions CI/CD.
+ *
+ *  On top of that, I built operator facing shop floor tools (Next.js/TypeScript) for an
+ *  in house MES that turn specialist CAD/CAM work into simple, guided steps, lowering the
+ *  barrier to entry so technicians could operate the line and earn higher pay.
  */</div>
 
         <h3>UTA Undergraduate Theoretical CS Teaching Assistant
