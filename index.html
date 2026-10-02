@@ -26,7 +26,7 @@
     <main class="wrap" id="main">
 
         <div class="notice">
-            I am currently open to full time, contract, and consulting opportunities — reach out via the <a href="contact.html">contact page</a>.
+            I am currently open to full time, contract, and consulting opportunities. See my <a href="portfolio.html">work portfolio</a> or reach out via the <a href="contact.html">contact page</a>.
         </div>
 
         <!-- Profile -->
@@ -40,8 +40,9 @@
                     <a href="https://www.uta.edu/">University of Texas at Arlington</a>
                 </p>
                 <br>
-                <p>Personal Email: icealfredo123[at]gmail[dot]com</p>
+                <p>Personal Email: alfredo.gutierrez.dev[at]gmail[dot]com</p>
                 <p>
+                    <a href="portfolio.html">Portfolio</a> /
                     <a href="https://github.com/notalfredo">GitHub</a> /
                     <a href="https://www.linkedin.com/in/alfredo-gutierrez-2a77181bb">LinkedIn</a>
                 </p>
@@ -79,24 +80,26 @@
 
         <h2 id="experience">Work Experience</h2>
 
-        <h3><a href="https://www.rmfg.com/">RMFG</a> — Full time Software Engineer
-            <span class="meta">Jan 2024 – Jul 2026</span>
-        </h3>
-        <h3><a href="https://www.rmfg.com/">RMFG</a> — Part time Software Engineer
-            <span class="meta">Jun 2023 – Dec 2023</span>
+        <h3><a href="https://www.rmfg.com/">RMFG</a> — Software Engineer
+            <span class="meta">Jun 2023 – Jul 2026</span>
+            <span class="meta"><a href="portfolio.html">See the portfolio →</a></span>
         </h3>
         <div class="comment">/*
- *  Helped build an API driven metal fabrication shop. Work written
- *  primarily in C++ and Rust. <a href="portfolio.html">(Link to portfolio)</a>
+ *  I owned the C++ geometry engine and Rust nesting engine end to end, contributed heavily
+ *  across the Python/FastAPI backend and Next.js shop floor UI, and built a computer vision
+ *  pipeline along the way: a C++/OpenCASCADE engine that replaced an entire manual quoting
+ *  team, automated DFM and geometry repair that eliminated the need for a dedicated CAD team, a
+ *  Rust nesting engine that saves thousands a week in material, and a vision system that
+ *  detects scrap metal so we stop wasting new sheets.
  *
- *  - Built a sheet metal unfolding engine (C++, OpenCASCADE) that auto detects flat and bent
- *    parts, unfolds them, and generates DXF flat patterns.
- *  - Built an auto nester and a camera driven nester (Rust): the cutting bed is photographed,
- *    remnant sheets are detected with a trained ML model, and parts are nested around the
- *    material already on the sheet.
- *  - Generated cutting machine G code with kerf compensation, lead ins, and micro joints.
- *  - Auto detected part features such as holes, countersinks, and weld paths on assemblies.
- *  - Supported editing part thickness and bend radius to match manufacturing needs.
+ *  I also built and maintained REST endpoints across a Python/FastAPI backend spanning quoting,
+ *  checkout, materials, designs, etc... with Pydantic models and a service layer over Postgres
+ *  (Supabase), writing SQL queries and schema migrations, and shipping it all with Docker and
+ *  GitHub Actions CI/CD.
+ *
+ *  On top of that, I built operator facing shop floor tools (Next.js/TypeScript) for an
+ *  in house MES that turn specialist CAD/CAM work into simple, guided steps, lowering the
+ *  barrier to entry so technicians could operate the line and earn higher pay.
  */</div>
 
         <h3>UTA Undergraduate Theoretical CS Teaching Assistant
@@ -156,7 +159,7 @@
 
     <footer class="site-footer" id="contact">
         <div class="wrap">
-            Alfredo Gutierrez — icealfredo123[at]gmail[dot]com —
+            Alfredo Gutierrez — alfredo.gutierrez.dev[at]gmail[dot]com —
             <a href="https://github.com/notalfredo">GitHub</a> /
             <a href="https://www.linkedin.com/in/alfredo-gutierrez-2a77181bb">LinkedIn</a>
         </div>
